@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import style from './FindHouse.module.css';
-import house from '../../multimedia-source/Icons/house.png'
-import apartment from '../../multimedia-source/Icons/apartment.png'
-import office from '../../multimedia-source/Icons/office.png'
-import shop from '../../multimedia-source/Icons/shop.png'
-import database from './database'
+import house from "../../multimedia-source/Icons/house.png";
+import apartment from "../../multimedia-source/Icons/apartment.png";
+import office from "../../multimedia-source/Icons/office.png";
+import shop from "../../multimedia-source/Icons/shop.png";
+import database from "./database";
+
+const sizeHouses = "h-[100px] w-[100px] rounded-xl object-cover  ";
 
 function FindHouse() {
-  const [properties, setProperties] = useState(database[0])
+  const [properties, setProperties] = useState(database[0]);
 
   const handleButtonClick = (event) => {
     const value = event.target.innerText;
@@ -16,33 +17,53 @@ function FindHouse() {
   };
 
   return (
-    <div className={style.container}>
-      <div className={style.items}>
-        <div className={style.iconAlign}>
-          <img src={house} alt="House Icon" />
-          <button onClick={handleButtonClick} className={style.button}>House</button>
+    <div className="bg-white w-[700px] h-[300px] flex flex-col justify-center p-10 rounded-xl	">
+      <div className="grid grid-cols-4 gap-4 h-[90px] ">
+        <div className="flex flex-col items-center">
+          <img src={house} alt="House Icon" className="h-12" />
+          <button
+            onClick={handleButtonClick}
+            className="text-black mt-1 hover:text-zinc-400	"
+          >
+            House
+          </button>
         </div>
 
-        <div className={style.iconAlign}>
-          <img src={apartment} alt="Apartment Icon" />
-          <button onClick={handleButtonClick} className={style.button} >Apartment</button>
+        <div className="flex flex-col items-center">
+          <img src={apartment} alt="Apartment Icon" className="h-12" />
+          <button
+            onClick={handleButtonClick}
+            className="text-black mt-1 hover:text-zinc-400"
+          >
+            Apartment
+          </button>
         </div>
 
-        <div className={style.iconAlign}>
-          <img src={office} alt="Office Icon" />
-          <button onClick={handleButtonClick} className={style.button} >Office</button>
+        <div className="flex flex-col items-center">
+          <img src={office} alt="Office Icon" className="h-12" />
+          <button
+            onClick={handleButtonClick}
+            className="text-black mt-1 hover:text-zinc-400"
+          >
+            Office
+          </button>
         </div>
 
-        <div className={style.iconAlign}>
-          <img src={shop} alt="Shophouse Icon" />
-          <button onClick={handleButtonClick} className={style.button} >Shophouse</button>
+        <div className="flex flex-col items-center">
+          <img src={shop} alt="Shophouse Icon" className="h-12" />
+          <button
+            onClick={handleButtonClick}
+            className="text-black mt-1 hover:text-zinc-400"
+          >
+            Shophouse
+          </button>
         </div>
       </div>
-      <div className={style.dataList}>
+      <div className="grid grid-cols-4 gap-4 mt-4">
         {properties.categorias.map((index) => (
-          <div key={Math.random()} className={style.map} >
-            <img src={index.imagen} className={style.image} />
-            <p>{index.categoria}</p>
+          <div key={Math.random()} className="flex flex-col items-center">
+            <img src={index.imagen} className={sizeHouses} />
+            <p className="text-center h-[30px] ">{index.categoria}</p>
           </div>
         ))}
       </div>

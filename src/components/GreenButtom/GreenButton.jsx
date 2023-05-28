@@ -3,9 +3,9 @@ import React from "react";
 
 function GreenButton(props) {
     return (
-        <div className="border-2 border-green-500 rounded-full p-1.5 text-white bg-green-500 w-full" >
+        <button className="border-2 border-green-500 rounded-full p-1.5 text-white bg-green-500 w-[100px]" >
             <p>{props.sms}</p>
-        </div>
+        </button>
     )
 }
 

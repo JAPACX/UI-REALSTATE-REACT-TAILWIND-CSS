@@ -7,7 +7,9 @@ const linkClass = "m-2.5";
 
 function Nav(props) {
   return (
-    <nav className='flex justify-between items-center'>
+    <div className="">
+
+<nav className='flex justify-between items-center'>
       <div className="m-12">
         <Link to={"/Home"} className={linkClass}>
           <button>Home</button>
@@ -52,6 +54,9 @@ function Nav(props) {
         </button>
       </div>
     </nav>
+
+    </div>
+    
   );
 }
 

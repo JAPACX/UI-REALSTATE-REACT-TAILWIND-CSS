@@ -1,12 +1,10 @@
 import React from "react";
-import styles from "./OurProjects.module.css";
-
-import uno from '../../multimedia-source/projects/1.jpg'
-import dos from '../../multimedia-source/projects/2.jpg'
-import tres from '../../multimedia-source/projects/3.jpg'
-import cuatro from '../../multimedia-source/projects/4.jpg'
-import cinco from '../../multimedia-source/projects/5.jpg'
-import seis from '../../multimedia-source/projects/6.jpg'
+import uno from '../../multimedia-source/projects/1.jpg';
+import dos from '../../multimedia-source/projects/2.jpg';
+import tres from '../../multimedia-source/projects/3.jpg';
+import cuatro from '../../multimedia-source/projects/4.jpg';
+import cinco from '../../multimedia-source/projects/5.jpg';
+import seis from '../../multimedia-source/projects/6.jpg';
 
 function OurProjectsP() {
   const projects = [
@@ -49,14 +47,14 @@ function OurProjectsP() {
   ];
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>Our Projects</h2>
-      <div className={styles.projects}>
+    <div className="max-w-800px mx-auto p-20">
+      <h2 className="text-24px font-bold mb-20">Our Projects</h2>
+      <div className="grid grid-cols-2 gap-20">
         {projects.map(project => (
-          <div key={project.id} className={styles.project}>
-            <img src={project.image} alt={project.title} className={styles.image} />
-            <h3 className={styles.projectTitle}>{project.title}</h3>
-            <p className={styles.projectDescription}>{project.description}</p>
+          <div key={project.id} className="bg-f5f5f5 p-20 rounded">
+            <img src={project.image} alt={project.title} className="w-full h-auto rounded mb-10" />
+            <h3 className="text-18px font-bold mb-10">{project.title}</h3>
+            <p className="text-14px leading-1.5 text-justify">{project.description}</p>
           </div>
         ))}
       </div>
