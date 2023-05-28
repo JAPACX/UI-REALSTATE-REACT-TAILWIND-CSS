@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+  width: 800px;
+  height: 40%;
+  justify-content: center;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.iconAlign {
+  display: flex;
+  align-items: center;
+}
+
+.dataList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dataList img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}

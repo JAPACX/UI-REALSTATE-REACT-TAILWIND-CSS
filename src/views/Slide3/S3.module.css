@@ -1,0 +1,48 @@
+.container {
+    width: 85%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.sup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+.cities{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 10px;
+}
+
+
+.employee img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+  
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center; /* Añade esta línea para centrar verticalmente */
+    height: 100%; /* Establece una altura para el contenedor */
+    background-color: rgb(236, 236, 236);
+    border-radius: 30px;
+  }
+
+  .testimonials p {
+    width: 60%;
+  }
+  

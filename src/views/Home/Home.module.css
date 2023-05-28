@@ -1,0 +1,57 @@
+.containerHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 600px;
+    background-color: aqua;
+    background-image: url('../../multimedia-source/img/wallpaperHouses.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Otros estilos opcionales */
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    
+
+}
+
+.ps1{
+    color: white;
+}
+
+.tituloS1 {
+    color: white;
+    /* font-family: "Roboto", sans-serif; */
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .archipielago {
+    text-align: start;
+    width: 70%;
+  }
+  .archipielago p{
+    text-align:justify;
+  }
+  
+
+
+.inferiorS1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    width: 85%;
+    
+}
+
+.Analitics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: azure;
+    padding: 15px;
+    border-radius: 15px;
+}
