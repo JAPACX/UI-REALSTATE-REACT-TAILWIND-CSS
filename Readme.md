@@ -1,8 +1,8 @@
-Proyecto React - ProtAh Prueba Tecnica
+# Proyecto React - ProtAh Prueba Tecnica
 
 ProtAh es una aplicación web desarrollada en React que permite a los usuarios comprar, vender y alquilar propiedades inmobiliarias. Proporciona una plataforma fácil de usar para buscar propiedades, obtener información detallada, ponerse en contacto con los agentes y explorar proyectos inmobiliarios.
 
-Tecnologías utilizadas
+# Tecnologías utilizadas
 
 El proyecto utiliza las siguientes tecnologías:
 
@@ -24,12 +24,13 @@ El proyecto utiliza las siguientes tecnologías:
 
 
 
-Credenciales de acceso
+# Credenciales de acceso
 
 Para acceder a las funcionalidades protegidas de la aplicación, puedes utilizar las siguientes credenciales:
 
 Usuario: jepacheco98@gmail.com
 Contraseña: 12345
 
-Demo
-[![Alt text](https://uncommunitymanager.es/wp-content/uploads/seo_google_youtube.jpg)](https://www.youtube.com/watch?v=sqGGhCQvu7s&ab_channel=JavierPacheco)
+# Demo (dale click a la imagen)
+
+[![Alt text](https://www.radiopop.cl/wp-content/uploads/2021/04/boton-clic-aqui.png)](https://www.youtube.com/watch?v=sqGGhCQvu7s&ab_channel=JavierPacheco)
