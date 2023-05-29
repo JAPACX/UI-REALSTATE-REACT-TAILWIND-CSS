@@ -25,3 +25,4 @@ Componente de búsqueda de propiedad: Es un componente funcional que permite a l
 Log In (Inicio de sesión): Es un componente funcional que proporciona un formulario para que los usuarios inicien sesión en la aplicación utilizando las credenciales proporcionadas. El componente puede incluir validación de inicio de sesión mediante el manejo de estados y validación de los datos ingresados por el usuario.
 
 Además de estos componentes, se utilizan otros componentes funcionales en la aplicación para construir diferentes secciones y funcionalidades. Estos componentes se benefician del uso de hooks como useState para gestionar el estado de los componentes de manera eficiente y reactiva.
+
