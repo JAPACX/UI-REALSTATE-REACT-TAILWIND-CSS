@@ -1,74 +1,78 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import mail from '../../multimedia-source/Icons/mail.png';
-import phone from '../../multimedia-source/Icons/phone.png';
-import GreenButton from '../GreenButtom/GreenButton';
-import facebook from '../../multimedia-source/Icons/socialmedia/facebook.png';
-import Youtube from '../../multimedia-source/Icons/socialmedia/Youtube.png';
-import WhatsApp from '../../multimedia-source/Icons/socialmedia/WhatsApp.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import style from "../Footer/Footer.module.css";
+import mail from "../../multimedia-source/Icons/mail.png";
+import phone from "../../multimedia-source/Icons/phone.png";
+import GreenButton from '../GreenButtom/GreenButton'
+import facebook from '../../multimedia-source/Icons/socialmedia/facebook.png'
+import Youtube from '../../multimedia-source/Icons/socialmedia/Youtube.png'
+import WhatsApp from '../../multimedia-source/Icons/socialmedia/WhatsApp.png'
 
-const sizeImg = 'h-8 filter invert m-4';
+const sizeIcon = "h-[30px]"
+
 
 const Footer = () => {
   return (
-    <div className="bg-blue-600 w-100%">
-      <div className="grid grid-cols-2 gap-2 p-4">
-        <div className='grid grid-rows-2'>
-          <div>
-            <h2 className="text-white">ProtAh</h2>
-            <p className="text-white">We are a company with 4 years of experience.</p>
-          </div>
-          <div className='grid grid-cols-2'>
-            <div className="flex items-center">
-              <img src={phone} alt="Have a question" className={sizeImg} />
-              <div className="ml-2">
-                <p className="text-white">Have a question</p>
-                <h3 className="text-white">310-437-2766</h3>
+    <footer className="w-[85%] flex justify-center bg-slate-400 rounded-lg " >
+      <div className={style.container}>
+        <div className='grid grid-cols-2 p-[15px]'>
+          <div className={style.logoInfo}>
+            <h2>ProtAh</h2>
+            <p>We are a company with 4 years of experience.</p>
+            <div className={style.contactInfo}>
+              <div className={style.info}>
+                <img className={sizeIcon} src={phone} alt="Have a question" />
+                <div className={style.contact}>
+                  <p>Have a question</p>
+                  <h3>310-437-2766</h3>
+                </div>
+              </div>
+              <div className={style.info}>
+                <img className={sizeIcon} src={mail} alt="Contact us at" />
+                <div className={style.contact}>
+                  <p>Contact us at</p>
+                  <h3>protah@outlook.es</h3>
+                </div>
               </div>
             </div>
-            <div className="flex items-center mt-2">
-              <img src={mail} alt="Contact us at" className={sizeImg} />
-              <div className="ml-2">
-                <p className="text-white">Contact us at</p>
-                <h3 className="text-white">protah@outlook.es</h3>
-              </div>
+          </div>
+          <div className={style.newsletter}>
+            <h1>Newsletter</h1>
+            <p>
+              Stay informed and up-to-date with ProtAh's newsletter. Subscribing to our newsletter ensures that you receive exclusive updates on new properties, valuable tips for buying or selling, special events, and industry news.
+
+            </p>
+            <form className={style.formulario}>
+              <input type="email" id="email" name="email" placeholder="Enter Your Email" />
+              <GreenButton sms="Submit" />
+            </form>
+          </div>
+        </div>
+        <div className={style.footerLinks}>
+          <div className={style.links}>
+            <Link to="/about">About Us</Link>
+            <Link to="/jobs">Jobs</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/press">Press</Link>
+            <Link to="/faq">FAQ</Link>
+            <Link to="/careers">Careers</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/sitemap">Sitemap</Link>
+            <Link to="/terms-of-use">Terms of Use</Link>
+          </div>
+          <div className={style.socialMedia}>
+            <div>
+              <img className={sizeIcon} src={facebook} alt="Facebook" />
+              <img className={sizeIcon} src={Youtube} alt="Youtube" />
+              <img className={sizeIcon} src={WhatsApp} alt="WhatsApp" />
             </div>
+            <p className={style.copyRight}>2012-2022, All Rights Reserved</p>
           </div>
-        </div>
-        <div>
-          <h1 className="text-white">Newsletter</h1>
-          <p className="text-white">
-            Stay informed and up-to-date with ProtAh's newsletter. Subscribing to our newsletter ensures that you receive exclusive updates on new properties, valuable tips for buying or selling, special events, and industry news.
-          </p>
-          <form>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email" className="w-full px-4 py-2 border rounded-md" />
-            <GreenButton sms="Submit" />
-          </form>
+
         </div>
       </div>
-      <div>
-        <div className="flex justify-center">
-          <Link to="/AboutUs" className="text-white mx-2">About Us</Link>
-          <Link to="/jobs" className="text-white mx-2">Jobs</Link>
-          <Link to="/blog" className="text-white mx-2">Blog</Link>
-          <Link to="/press" className="text-white mx-2">Press</Link>
-          <Link to="/faq" className="text-white mx-2">FAQ</Link>
-          <Link to="/careers" className="text-white mx-2">Careers</Link>
-          <Link to="/contact" className="text-white mx-2">Contact</Link>
-          <Link to="/privacy-policy" className="text-white mx-2">Privacy Policy</Link>
-          <Link to="/sitemap" className="text-white mx-2">Sitemap</Link>
-          <Link to="/terms-of-use" className="text-white mx-2">Terms of Use</Link>
-        </div>
-        <div className='flex justify-center'>
-          <div className='flex' >
-            <img src={facebook} alt="Facebook" className={sizeImg} />
-            <img src={Youtube} alt="Youtube" className={sizeImg} />
-            <img src={WhatsApp} alt="WhatsApp" className={sizeImg} />
-          </div>
-          <p className="text-white mt-4">2012-2022, All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 

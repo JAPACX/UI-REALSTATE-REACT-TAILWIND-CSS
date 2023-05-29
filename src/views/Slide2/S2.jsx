@@ -17,25 +17,25 @@ const sizeImg = 'h-[80px] w-auto rounded-xl object-cover'
 function S2() {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl">Benefit of Choosing Us</h1>
+      <h1 className="text-4xl">Benefit of Choosing Us</h1>
 
       <div className='grid grid-cols-3 justify-center mb-10'>
 
         <div className="p-5">
           <Analitics number='01.' />
-          <h3 className="mt-5 mb-5">Access to Exclusive Projects</h3>
+          <h3 className="mt-5 mb-5 text-3xl	" >Access to Exclusive Projects</h3>
           <p className="text-justify" >As a client of ProtAh, you gain the advantage of accessing exclusive and high-value real estate projects. These projects are carefully curated and offer unique opportunities that may not be available to the general public. </p>
         </div>
 
         <div className="p-5">
           <Analitics number='02.' />
-          <h3 className="mt-5 mb-5">Personal Data Privacy is Safe</h3>
+          <h3 className="mt-5 mb-5 text-3xl	">Personal Data Privacy is Safe</h3>
           <p className="text-justify" >At ProtAh, we prioritize the security and confidentiality of your personal information. We have robust measures in place to protect your data from unauthorized access, ensuring that your privacy is safeguarded. </p>
         </div>
 
         <div className="p-5">
           <Analitics number='03.' />
-          <h3 className="mt-5 mb-5">Faster and Easier Transactions</h3>
+          <h3 className="mt-5 mb-5 text-3xl	">Faster and Easier Transactions</h3>
           <p className="text-justify" > ProtAh streamlines the real estate transaction process, making it faster and easier for you. We leverage technology and efficient systems to expedite the buying, selling, or renting process. </p>
         </div>
 

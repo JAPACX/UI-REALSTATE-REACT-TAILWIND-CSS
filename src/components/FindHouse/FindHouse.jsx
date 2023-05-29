@@ -17,7 +17,7 @@ function FindHouse() {
   };
 
   return (
-    <div className="bg-white w-[700px] h-[300px] flex flex-col justify-center p-10 rounded-xl	">
+    <div className="bg-white w-[700px] h-[250px] flex flex-col justify-center p-10 rounded-xl	">
       <div className="grid grid-cols-4 gap-4 h-[90px] ">
         <div className="flex flex-col items-center">
           <img src={house} alt="House Icon" className="h-12" />

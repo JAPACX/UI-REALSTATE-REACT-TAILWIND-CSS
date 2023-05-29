@@ -3,51 +3,50 @@ import { Link } from 'react-router-dom';
 import icon from '../../multimedia-source/Icons/Icon.png'
 
 // Clase Global para los Links
-const linkClass = "m-2.5";
 
 function Nav(props) {
   return (
-    <div className="">
 
-<nav className='flex justify-between items-center'>
-      <div className="m-12">
-        <Link to={"/Home"} className={linkClass}>
+    <nav className='flex justify-around w-full items-center h-[70px]'>
+
+      <div className=' grid grid-cols-4 w-[30%] items-center'>
+        <Link to={"/Home"} >
           <button>Home</button>
         </Link>
 
-        <Link to={"/Buy"} className={linkClass}>
+        <Link to={"/Buy"} >
           <button>Buy</button>
         </Link>
 
-        <Link to={"/SellAndRent"} className={linkClass}>
+        <Link to={"/SellAndRent"} >
           <button>Sell and Rent</button>
         </Link>
 
-        <Link to={"/OurProjects"} className={linkClass}>
+        <Link to={"/OurProjects"} >
           <button>Our Projects</button>
         </Link>
       </div>
 
-      <div className='flex justify-between items-center'>
+      <div className='flex items-center'>
         <img src={icon} alt="Icono" className="h-11" />
-        ProtAh
+        <p>ProtAh</p>
       </div>
 
-      <div className="m-12">
-        <Link to={"/JoinWithUs"} className={linkClass}>
+      <div className=' grid grid-cols-4 w-[30%] items-center'>
+        <Link to={"/JoinWithUs"} >
           <button>Join with Us</button>
         </Link>
 
-        <Link to={"/Contact"} className={linkClass}>
+        <Link to={"/Contact"} >
           <button>Contact</button>
         </Link>
 
-        <Link to={"/AboutUs"} className={linkClass}>
+        <Link to={"/AboutUs"} >
           <button>About Us</button>
         </Link>
 
         <button
-          className="border-2 border-green-500 rounded-full p-1.5 text-white bg-green-500"
+          className="border-[6px] border-green-500 rounded-full  text-white bg-green-500"
           onClick={() => { props.setAccess(false) }}
         >
           Log Out
@@ -55,8 +54,8 @@ function Nav(props) {
       </div>
     </nav>
 
-    </div>
-    
+
+
   );
 }
 
