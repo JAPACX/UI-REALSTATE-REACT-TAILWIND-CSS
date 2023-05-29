@@ -34,3 +34,7 @@ Contraseña: 12345
 # Demo (dale click a la imagen)
 
 [![Alt text](https://www.radiopop.cl/wp-content/uploads/2021/04/boton-clic-aqui.png)](https://www.youtube.com/watch?v=sqGGhCQvu7s&ab_channel=JavierPacheco)
+
+# App Escritorio Desplegada
+
+[![Alt text](https://global-uploads.webflow.com/618fa90c201104b94458e1fb/633adf7737b8727ee9e3b0b7_Vercel-Deployment-How-to-Deploy-React-App-to-Vercel_OG-Image.jpg)](https://ui-realstate-react-tailwind-css.vercel.app/)

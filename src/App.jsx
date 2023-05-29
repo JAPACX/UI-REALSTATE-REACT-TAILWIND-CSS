@@ -33,7 +33,7 @@ function App() {
       navigate('/Home');
     }
     else {
-      alert('Datos incorrectos informacion en el Readme')
+      alert('Datos incorrectos informacion en el Readme https://github.com/JAPACX/UI-REALSTATE-REACT-TAILWIND-CSS')
     }
   }
   useEffect(() => {
