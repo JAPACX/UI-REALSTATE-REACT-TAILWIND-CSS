@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-// import icon from '../../multimedia-source/Icons/Icon.png'
+import icon from '../../multimedia-source/Icons/Icon.png'
 
 
 function Nav(props) {
@@ -22,7 +22,7 @@ function Nav(props) {
       </div>
 
       <div className='flex items-center'>
-        {/* <img src={icon} alt="Icono" className="h-11" /> */}
+        <img src={icon} alt="Icono" className="h-11" />
         <p>ProtAh</p>
       </div>
 
