@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import house from "../../multimedia-source/Icons/house.png";
 import apartment from "../../multimedia-source/Icons/apartment.png";
 import office from "../../multimedia-source/Icons/office.png";
@@ -20,9 +21,8 @@ function FindHouse() {
     <div className="bg-white w-[700px] h-[250px] flex flex-col justify-center p-10 rounded-xl	">
       <div className="grid grid-cols-4 gap-4 h-[90px] ">
         <div className="flex flex-col items-center">
-          <img src={house} alt="House Icon" className="h-12" />
-          <button
-            onClick={handleButtonClick}
+          <img src={house} alt="House Icon" className="h-12 object-cover" />
+          <button onClick={handleButtonClick}
             className="text-black mt-1 hover:text-zinc-400	"
           >
             House
@@ -61,10 +61,12 @@ function FindHouse() {
       </div>
       <div className="grid grid-cols-4 gap-4 mt-4">
         {properties.categorias.map((index) => (
-          <div key={Math.random()} className="flex flex-col items-center">
-            <img src={index.imagen} className={sizeHouses} />
-            <p className="text-center h-[30px] ">{index.categoria}</p>
-          </div>
+          <Link  key={Math.random()}  to={`/detail/${index.id}`}>
+            <div className="flex flex-col items-center">
+              <img src={index.imagen} className={sizeHouses} />
+              <p className="text-center h-[30px] ">{index.categoria}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>

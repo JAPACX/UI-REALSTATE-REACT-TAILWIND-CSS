@@ -57,9 +57,15 @@ const Footer = () => {
 
         <div className="flex justify-between">
           <div className="flex">
-            <img className="h-[20px] invert m-[5px]" src={whatsApp} alt="whatsApp" />
-            <img className="h-[20px] invert m-[5px]" src={facebook} alt="facebook" />
-            <img className="h-[20px] invert m-[5px]" src={youtube} alt="youtube" />
+            <Link to="https://api.whatsapp.com/send/?phone=573024507261">
+              <img className="h-[20px] invert m-[5px]" src={whatsApp} alt="whatsApp" />
+            </Link>
+            <Link to="https://www.facebook.com/business/industries/real-estate">
+              <img className="h-[20px] invert m-[5px]" src={facebook} alt="facebook" />
+            </Link>
+            <Link to="https://www.youtube.com/@capitalbrokersluxuryrealestate">
+              <img className="h-[20px] invert m-[5px]" src={youtube} alt="youtube" />
+            </Link>
           </div>
           <p>2012-2022, All Rights Reserved</p>
         </div>

@@ -15,6 +15,7 @@ import JoinWithUs from './views/JoinWithUs/JoinWithUs'
 import Contact from './views/Contact/Contact'
 import AboutUs from './views/AboutUs/AboutUs'
 import OurProjects from './views/OurProjects/OurProjectsP'
+import Detail from './components/Detail/Detail';
 
 function App() {
 
@@ -55,6 +56,8 @@ function App() {
           <Route path="/JoinWithUs" element={<JoinWithUs />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path='/detail/:id' element={<Detail />} />
+
         </Routes>
         {location.pathname !== '/' && <Footer />}
     </div>

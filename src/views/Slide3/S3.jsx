@@ -34,7 +34,7 @@ function S3() {
             </div>
             <div className="flex justify-center mt-20">
                 <div className='bg-[#f6f6f6] w-[60%] rounded-xl p-5 mb-16  flex flex-col items-center justify-center'>
-                    <h1 className="m-10 text-4xl	 ">Testimonials Our Clients</h1>
+                    <h1 className="m-10 text-4xl text-center ">Testimonials Our Clients</h1>
                     <p className="w-[60%] text-justify">"Working with ProtAh was an absolute pleasure. Their team of dedicated professionals provided exceptional service and guided me through every step of the real estate process. They listened attentively to my requirements and found the perfect property that met all my needs."</p>
                     <div className="flex flex-col items-center" >
                         <img src={saulgoodman} alt="saulgoodman" className="m-3 rounded-full object-cover h-16 w-16" />

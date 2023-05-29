@@ -32,7 +32,7 @@ function Home() {
             <GreenButton sms='Our Project' />
             </Link>
           </div>
-          <div className=' grid grid-cols-2 grid-rows-2 bg-[#f0f0f0] p-10 rounded-xl justify-center items-center text-center'>
+          <div className=' grid  grid-cols-2 grid-rows-2 bg-[#f0f0f0] p-10 rounded-xl justify-center items-center text-center'>
             <div><Analitics number='300+' />Property Options</div>
             <div><Analitics number='48+' />Partners</div>
             <div><Analitics number='52k+' />Customers</div>
@@ -42,9 +42,6 @@ function Home() {
         <S2 />
         <S3 />
       </div>
-
-
-
     </>
   );
 }
