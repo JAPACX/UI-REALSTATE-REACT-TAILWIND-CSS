@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function ApartmentsCities(props) {
     return (
       <div className="relative">

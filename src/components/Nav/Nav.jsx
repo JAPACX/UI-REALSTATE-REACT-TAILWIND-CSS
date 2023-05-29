@@ -2,26 +2,20 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import icon from '../../multimedia-source/Icons/Icon.png'
 
-// Clase Global para los Links
 
 function Nav(props) {
   return (
-
     <nav className='flex justify-around w-full items-center h-[70px]'>
-
       <div className=' grid grid-cols-4 w-[30%] items-center'>
         <Link to={"/Home"} >
           <button>Home</button>
         </Link>
-
         <Link to={"/Buy"} >
           <button>Buy</button>
         </Link>
-
         <Link to={"/SellAndRent"} >
           <button>Sell and Rent</button>
         </Link>
-
         <Link to={"/OurProjects"} >
           <button>Our Projects</button>
         </Link>

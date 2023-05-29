@@ -1,6 +1,9 @@
 import React from "react";
 import GreenButton from '../../components/GreenButtom/GreenButton'
 import ApartmentsCities from '../../components/ApartmentsCities/ApartmentsCities'
+import { Link } from 'react-router-dom';
+
+
 
 //imagenes 
 import permata from '../../multimedia-source/cities/permata.jpg'
@@ -17,7 +20,9 @@ function S3() {
                 <h1 className="text-5xl">Our Recommended Comfortable Residence</h1>
                 <div>
                     <p>We take pride in recommending comfortable residences that meet your specific needs. We understand that finding a home that aligns with your lifestyle and preferences is essential. Our expert team evaluates various factors, including location, amenities, and design, to suggest residences that offer comfort, convenience, and a welcoming environment. .</p>
-                    <GreenButton sms='See more' />
+                    <Link to={"/OurProjects"} >
+                        <GreenButton sms='See More' />
+                    </Link>
                 </div>
             </div>
             <div className='grid grid-cols-5 gap-[20px] mt-20'>

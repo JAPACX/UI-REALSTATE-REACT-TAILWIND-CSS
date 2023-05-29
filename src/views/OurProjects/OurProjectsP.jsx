@@ -46,15 +46,23 @@ function OurProjectsP() {
     }
   ];
 
+  const principalTitle = "text-5xl	mb-[50px] text-center"
+
+  const secondaryTitle = "text-4xl mb-[20px]"
+  
+  const text = "text-base leading-6 mb-[50px] text-justify"
+  
+  const sizePage = "w-[85%] mt-[100px] mb-[100px]  "
+  
   return (
-    <div className="max-w-800px mx-auto p-20">
-      <h2 className="text-24px font-bold mb-20">Our Projects</h2>
+    <div className={sizePage}>
+      <h2 className={principalTitle}>Our Projects</h2>
       <div className="grid grid-cols-2 gap-20">
         {projects.map(project => (
-          <div key={project.id} className="bg-f5f5f5 p-20 rounded">
-            <img src={project.image} alt={project.title} className="w-full h-auto rounded mb-10" />
-            <h3 className="text-18px font-bold mb-10">{project.title}</h3>
-            <p className="text-14px leading-1.5 text-justify">{project.description}</p>
+          <div key={project.id} className="bg-f5f5f5 p-2 rounded">
+            <img src={project.image} alt={project.title} className="w-full h-[400px] object-cover rounded-xl mb-10" />
+            <h3 className={secondaryTitle}>{project.title}</h3>
+            <p className={text}>{project.description}</p>
           </div>
         ))}
       </div>

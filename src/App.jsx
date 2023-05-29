@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+
 
 import './App.css';
 import Nav from './components/Nav/Nav';
 import Home from './views/Home/Home';
 import Footer from './components/Footer/Footer';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 //componentes de rutas
 import Login from './views/Login/Login'
@@ -20,7 +20,6 @@ function App() {
 
   const location = useLocation();
   const navigate = useNavigate();
-
 
   // Simulacion de seguridad
   const [access, setAccess] = useState(false)
@@ -61,6 +60,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;
