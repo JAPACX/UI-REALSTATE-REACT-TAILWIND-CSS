@@ -4,8 +4,8 @@ import mail from "../../multimedia-source/Icons/mail.png";
 import phone from "../../multimedia-source/Icons/phone.png";
 import GreenButton from '../GreenButtom/GreenButton'
 import facebook from '../../multimedia-source/Icons/socialmedia/facebook.png'
-import youtube from '../../multimedia-source/Icons/socialmedia/Youtube.png'
-import whatsApp from '../../multimedia-source/Icons/socialmedia/WhatsApp.png'
+import youtube from '../../multimedia-source/Icons/socialmedia/youtube.png'
+import whatsApp from '../../multimedia-source/Icons/socialmedia/whatsApp.png'
 
 const Footer = () => {
   return (

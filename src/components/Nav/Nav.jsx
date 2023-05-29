@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import icon from '../../multimedia-source/Icons/Icon.png'
+import icon from '../../multimedia-source/Icons/icon.png'
 
 
 function Nav(props) {
