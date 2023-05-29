@@ -9,7 +9,7 @@ import whatsApp from '../../multimedia-source/Icons/socialmedia/WhatsApp.png'
 
 const Footer = () => {
   return (
-    <footer className="w-[85%] bg-[#0284c7] text-white grid grid-rows-2 rounded-b-3xl" >
+    <footer className="w-[85%] bg-[#0284c7] text-white grid grid-rows-2 " >
 
       <div className="grid grid-cols-2 justify-center h-[200px]">
 
@@ -38,12 +38,10 @@ const Footer = () => {
           <h1 className="text-2xl m-[10px]">Newsletter</h1>
           <p>Stay informed and up-to-date with ProtAh's newsletter. Subscribing to our newsletter ensures that you receive exclusive updates on new properties, valuable tips for buying or selling, special events, and industry news.</p>
           <form>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email" />
+            <input className="h-[40px] rounded-lg w-min-[200px] w-[50%]" type="email" id="email" name="email" placeholder="  Enter Your Email" />
             <GreenButton sms="Submit" />
           </form>
-          <div>
-            formulario
-          </div>
+
 
         </div>
 
