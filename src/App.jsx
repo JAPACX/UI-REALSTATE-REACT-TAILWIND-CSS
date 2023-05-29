@@ -23,8 +23,8 @@ function App() {
 
   // Simulacion de seguridad
   const [access, setAccess] = useState(false)
-  let username = ''
-  let password = ''
+  let username = 'jepacheco98@gmail.com'
+  let password = '12345'
 
   function login(userData) {
     if (userData.email === username && userData.password === password) {

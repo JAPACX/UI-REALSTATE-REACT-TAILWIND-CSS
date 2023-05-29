@@ -6,7 +6,7 @@ import icon from '../../multimedia-source/Icons/Icon.png'
 function Nav(props) {
   return (
     <nav className='flex justify-around w-full items-center h-[70px]'>
-      <div className=' grid grid-cols-4 w-[30%] items-center'>
+      <div className=' grid grid-cols-4 w-[40%] items-center text-center'>
         <Link to={"/Home"} >
           <button>Home</button>
         </Link>
@@ -26,7 +26,7 @@ function Nav(props) {
         <p>ProtAh</p>
       </div>
 
-      <div className=' grid grid-cols-4 w-[30%] items-center'>
+      <div className=' grid grid-cols-4 w-[40%] items-center text-center'>
         <Link to={"/JoinWithUs"} >
           <button>Join with Us</button>
         </Link>
